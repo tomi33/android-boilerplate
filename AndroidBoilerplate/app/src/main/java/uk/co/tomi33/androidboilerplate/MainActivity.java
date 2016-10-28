@@ -12,6 +12,7 @@ import uk.co.tomi33.androidboilerplate.Activity.NavigationActivity;
 public class MainActivity extends AppCompatActivity {
 
     private Button mAuthIntentButton;
+    private Button mNavigationIntentButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
         mAuthIntentButton = (Button) findViewById(R.id.auth_activity_intent_button);
 
         mAuthIntentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, AuthActivity.class);
+                startActivity(i);
+            }
+        });
+
+        mNavigationIntentButton = (Button) findViewById(R.id.navigation_activity_intent_button);
+
+        mNavigationIntentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, NavigationActivity.class);
