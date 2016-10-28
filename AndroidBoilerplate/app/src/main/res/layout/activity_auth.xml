@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_auth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uk.co.tomi33.androidboilerplate.Activity.AuthActivity">
+
+    <LinearLayout android:id="@+id/log_in_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_identifier_input_label"/>
+        <EditText android:id="@+id/log_in_auth_identifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_password_input_label"/>
+        <EditText android:id="@+id/log_in_auth_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button android:id="@+id/log_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            />
+
+        <TextView android:id="@+id/sign_up_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_not_have_an_account_prompt"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/sign_up_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_identifier_input_label"/>
+        <EditText android:id="@+id/sign_up_auth_identifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auth_password_input_label"/>
+        <EditText android:id="@+id/sign_up_auth_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button android:id="@+id/sign_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            />
+
+        <TextView android:id="@+id/log_in_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_account_prompt"/>
+    </LinearLayout>
+
+</RelativeLayout>
